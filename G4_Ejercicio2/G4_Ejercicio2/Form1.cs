@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace G4_Ejercicio2
 {
-    public partial class Form1 : Form
+    public partial class FrmMenu : Form
     {
-        public Form1()
+        public FrmMenu()
         {
             InitializeComponent();
+        }
+
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea salir del programa?", "Salir",MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button1)== DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ namespace G4_Ejercicio2
         string universidad;
         string carrera;
         int materiasInscritas;
-        double notas;
+        double[] notas = new double[5];
         double cum;
 
 
@@ -34,7 +34,7 @@ namespace G4_Ejercicio2
             set { materiasInscritas = value; }
         }
 
-        public double Notas
+        public double[] Notas
         {
             get { return notas; }
             set { notas = value; }
