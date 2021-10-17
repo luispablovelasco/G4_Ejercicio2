@@ -12,6 +12,7 @@ namespace G4_Ejercicio2
         string nomproyecto;
         double thoras;
         double nhorascompletas;
+        double promedio;
 
         public string Nombreproyecto
         {
@@ -29,6 +30,12 @@ namespace G4_Ejercicio2
         {
             get { return nhorascompletas; }
             set { nhorascompletas = value; }
+        }
+
+        public double Promedio
+        {
+            get { return promedio; }
+            set { promedio = value; }
         }
 
     }
