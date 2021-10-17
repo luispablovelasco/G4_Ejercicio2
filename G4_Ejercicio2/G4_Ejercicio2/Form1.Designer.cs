@@ -70,6 +70,7 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.txtbuscaruni = new System.Windows.Forms.TextBox();
+            this.btnmostrar = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -338,6 +339,7 @@
             // 
             // cmboxuniversidad
             // 
+            this.cmboxuniversidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmboxuniversidad.FormattingEnabled = true;
             this.cmboxuniversidad.Items.AddRange(new object[] {
             "Don Bosco",
@@ -359,6 +361,7 @@
             // 
             // cmboxlvlestudios
             // 
+            this.cmboxlvlestudios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmboxlvlestudios.FormattingEnabled = true;
             this.cmboxlvlestudios.Items.AddRange(new object[] {
             "Bachillerato",
@@ -406,6 +409,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnmostrar);
             this.tabPage2.Controls.Add(this.txtbuscaruni);
             this.tabPage2.Controls.Add(this.label18);
             this.tabPage2.Controls.Add(this.btnBuscar);
@@ -487,6 +491,16 @@
             this.txtbuscaruni.Size = new System.Drawing.Size(373, 20);
             this.txtbuscaruni.TabIndex = 4;
             // 
+            // btnmostrar
+            // 
+            this.btnmostrar.Location = new System.Drawing.Point(580, 43);
+            this.btnmostrar.Name = "btnmostrar";
+            this.btnmostrar.Size = new System.Drawing.Size(213, 23);
+            this.btnmostrar.TabIndex = 5;
+            this.btnmostrar.Text = "Mostrar todos los registros";
+            this.btnmostrar.UseVisualStyleBackColor = true;
+            this.btnmostrar.Click += new System.EventHandler(this.btnmostrar_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -555,6 +569,7 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView Dgvingenieria;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button btnmostrar;
     }
 }
 

@@ -121,9 +121,9 @@ namespace G4_Ejercicio2
                 ing.NivelEstudios = "Tecnico";
             }
             //Caso de Nivel de Estudios "Ingenieria"
-            if (cmboxlvlestudios.SelectedItem.ToString() == "Ingeniería")
+            if (cmboxlvlestudios.SelectedItem.ToString() == "Ingeniería ")
             {
-                ing.NivelEstudios = "Ingeniería";
+                ing.NivelEstudios = "Ingeniería ";
             }
 
             //Ahora hacemos los casos para el ingreso de los datos "Nombre de Universidad"
@@ -158,6 +158,11 @@ namespace G4_Ejercicio2
             limpiarCampos();
         }
 
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             //En esta variable almacenaremos la universidad que se buscará
@@ -177,14 +182,17 @@ namespace G4_Ejercicio2
             
         }
 
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-            LlenarGrid(Ingenieros);
-        }
+
 
         private void Frmmenu_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnmostrar_Click(object sender, EventArgs e)
+        {
+            //Mostrará la lista con los datos registrados en ese momento
+            LlenarGrid(Ingenieros);
         }
     }
 }
